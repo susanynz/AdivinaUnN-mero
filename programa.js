@@ -16,6 +16,7 @@ while (userNumber != secretNumber) {
 
   if (userNumber == secretNumber) {
     // Utilizar un solo mensaje en la consola
+    alert(`Felicidades, adivinaste el número secreto en ${intentos} ${intentos == 1 ? "intento" : "intentos"}`);
     console.log(`¡Felicidades! Adivinaste el número secreto. En ${intentos} ${intentos == 1 ? "intento" : "intentos"}`);
   } else {
     // Función anidada (otra función dentro de la función)
@@ -30,6 +31,7 @@ while (userNumber != secretNumber) {
 
   // Contador de intentos si el usuario no acierta
   intentos++;
+
   // Verifica si se superó el número máximo de intentos
   if (intentos > maximosIntentos) {
     alert(`Superaste el número máximo de ${maximosIntentos} intentos, vuelve mañana`);
