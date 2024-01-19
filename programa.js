@@ -1,10 +1,10 @@
-alert('Veamos qué tan intuitivo eres');
+alert('Te daré diez intentos para adivinar el número secreto');
 
 let numeroMaximoPosible = 100;
-let secretNumber = Math.floor(Math.random()*10)+1;
+let secretNumber = Math.floor(Math.random()*100)+1;
 let userNumber;
 let intentos = 1;
-let maximosIntentos = 6;
+let maximosIntentos = 10;
 //let palabraIntento = "intento";
 console.log(secretNumber)
 
@@ -20,9 +20,9 @@ while (userNumber != secretNumber) {
   } else {
     // Función anidada (otra función dentro de la función)
     if (userNumber < secretNumber) {
-      alert("No adivinaste pero tienes otra oportunidad. Te daré una pista, el número es más grande");
+      alert("Ups, el número secreto es incorrecto. Te daré una pista: el número es mayor");
     } else {
-      alert("El numero secreto es menor");
+      alert("Ups, el número secreto es incorrecto. Te daré una pista: el número es mayor");
     }
   }
 
